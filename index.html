@@ -258,6 +258,25 @@ footer {
 }
 .footer-row a:hover { color: white; }
 
+.profile-picture {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--black);
+  display: block;
+}
+
+.profile-wrapper {
+  flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+  .profile-wrapper {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .nav-links { display: none; }
   .hero { min-height: 620px; }
@@ -311,6 +330,10 @@ footer {
           <a class="button button-light" href="#about">View profile</a>
         </div>
       </div>
+      <div class="profile-wrapper">
+      <img src="profile.png" alt="Md. Sajid Hossain" class="profile-picture">
+      </div>
+      
       
     </section>
 
